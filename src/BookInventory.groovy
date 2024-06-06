@@ -24,6 +24,12 @@ class BookInventory {
         return books.find { it.title == title }
     }
 
+    // Funktion zum Sortieren der Bücher nach Titel in aufsteigender Reihenfolge
+    def sortBooksByTitle() {
+        books = books.sort { it.title }
+        println("Bücher wurden nach Titel sortiert.")
+    }
+
     // Funktion zum Anzeigen des gesamten Buchinventars
     def displayInventory() {
         println("Buchinventar:")
