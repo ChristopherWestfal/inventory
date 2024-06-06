@@ -7,4 +7,10 @@ static void main(String[] args) {
 
   // Anzeigen des gesamten Buchinventars
   bookInventory.displayInventory()
+
+  // Beispiel zum Löschen eines Buches
+  bookInventory.removeBook("Der Herr der Ringe")
+
+  // Anzeigen des aktualisierten Buchinventars
+  bookInventory.displayInventory()
 }

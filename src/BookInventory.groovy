@@ -8,6 +8,17 @@ class BookInventory {
         println("Buch '$title' von $author wurde dem Inventar hinzugefügt.")
     }
 
+    // Funktion zum Löschen eines Buches aus dem Inventar
+    def removeBook(String title) {
+        def removedBook = books.find { it.title == title }
+        if (removedBook) {
+            books.remove(removedBook)
+            println("Buch '$title' wurde aus dem Inventar entfernt.")
+        } else {
+            println("Buch '$title' konnte nicht gefunden und entfernt werden.")
+        }
+    }
+
     // Funktion zum Anzeigen des gesamten Buchinventars
     def displayInventory() {
         println("Buchinventar:")
