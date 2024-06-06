@@ -19,6 +19,11 @@ class BookInventory {
         }
     }
 
+    // Funktion zum Suchen nach einem Buch im Inventar
+    def searchBook(String title) {
+        return books.find { it.title == title }
+    }
+
     // Funktion zum Anzeigen des gesamten Buchinventars
     def displayInventory() {
         println("Buchinventar:")

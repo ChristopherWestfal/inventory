@@ -13,4 +13,12 @@ static void main(String[] args) {
 
   // Anzeigen des aktualisierten Buchinventars
   bookInventory.displayInventory()
+
+  // Beispiel zum Suchen nach einem Buch
+  def searchedBook = bookInventory.searchBook("Der Herr der Ringe")
+  if (searchedBook) {
+    println("Buch gefunden: Titel: ${searchedBook.title}, Autor: ${searchedBook.author}, Menge: ${searchedBook.quantity}")
+  } else {
+    println("Buch nicht gefunden.")
+  }
 }
